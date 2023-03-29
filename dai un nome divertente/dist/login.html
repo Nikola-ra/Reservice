@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP PAGE REGISTER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="flex bg-gradient-sx w-full h-full min-h-screen">
+        <div class="flex flex-col flex-[2]">
+            <div class="logo flex items-center p-4">
+                <a href="./index.html"><img src="./img/logo.svg" alt="" class="w-16 h-12"></a>
+                <a href="./index.html"><span class="p-2 text-2xl font-bold">Reservice</span></a>
+            </div>
+            <div class="flex-adjust h-full">   <!-- lato a sinistra  -->
+                <form action="" method="post" class="flex flex-col items-center">
+                <h1 class="titles">Accedi al tuo account</h1>
+                <p class="subtitles">sottotitolo di prova</p>
+                <input type="email" placeholder="Email" name="user" id="user" class="form-input">
+                <input type="password" placeholder = "Password" name="pass" id="pass" class="form-input">
+                <input type="submit" value="Conferma" class="login-btn bg-gradient-dx w-1/2 text-white">
+                <p class="lg:hidden text-center">Non hai un'account?<a href="./reg.html" class="reg-links">Registrati ora!</a></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="flex-[1] text-white bg-gradient-dx hidden lg:block lg:flex-adjust lg:flex-col">  <!-- lato a destra  -->
+            <h2 class="titles text-4xl">Non hai un'account?</h2>
+            <p class="subtitles">Registrati per poter iniziare ad usare <br> il nostro servizio</p>
+            <a href="./reg.html" class="login-btn bg-gradient-sx w-1/3 text-base text-black">Registrati</a>
+        </div>
+    </div>
+</body>
+</html>
