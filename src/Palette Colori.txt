@@ -1,0 +1,5 @@
+Violetto: #9790F0
+Blu scuro: #6076F7
+Indaco : #628EE0
+Azzurro scuro: #60B5F7
+Azzurro : #5CCCED
