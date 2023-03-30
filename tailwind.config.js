@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'icons': 'rgb(168 85 247)',
+        'icons': '#4B6FF0',
         'violetto': '#9790F0',
         'darkblue': '#012E5A',
         'indaco': '#628EE0',
@@ -17,7 +17,7 @@ module.exports = {
       },
       backgroundImage: {
         'gradient-sx' : 'linear-gradient(to top, #cfd9df 0%, #e1e5e8 100%)',
-        'gradient-dx' : 'linear-gradient(130deg, #c471f5 0%, #fa71cd 100%)'
+        'gradient-dx' : 'linear-gradient(130deg, #628EE0 0%, #5CCCED 100%)'
       },
       transitionTimingFunction: {
         'cubic': 'cubic-bezier(0.25,0.60,0.35,1)'
