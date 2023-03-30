@@ -6,8 +6,8 @@
  preserveAspectRatio="xMidYMid meet">
  <defs>
      <linearGradient id="Gradientsss">
-      <stop offset="0%" stop-color="#c471f5"/>
-      <stop offset="100%" stop-color="#fa71cd"/>
+      <stop offset="0%" stop-color="#628EE0"/>
+      <stop offset="100%" stop-color="#5CCCED"/>
     </linearGradient>
  </defs>
 

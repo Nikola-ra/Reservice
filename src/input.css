@@ -33,7 +33,9 @@
     .menu-open #menu{@apply translate-x-0;}
 
     .scroll #outer-header {@apply mt-0 bg-zinc-100 shadow-lg;}
-    .scroll_image #img_text p {@apply opacity-100;}
+
+    .scroll .switchLogoWhite {@apply hidden;}
+    .scroll .switchLogoColor {@apply inline-block;}
 }
 
 @layer utilities {
