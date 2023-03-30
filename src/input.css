@@ -4,7 +4,7 @@
 
 @layer base {
     body {
-        font-family: 'lato', 'sans-serif';
+        font-family: 'Source Sans Pro', sans-serif;
     }
     .menu-transition {
         transition: all .3s cubic-bezier(0.25,0.60,0.35,1);
