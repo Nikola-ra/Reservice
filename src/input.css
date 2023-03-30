@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: 'lato', 'sans-serif';
+    }
+    .menu-transition {
+        transition: all .3s cubic-bezier(0.25,0.60,0.35,1);
+    }
+}
+
+@layer components {
+    .form-input {
+        @apply rounded-2xl bg-slate-200 placeholder:text-slate-600 invalid:bg-red-300 focus:drop-shadow-md border-none w-3/4 p-3 pl-4 my-3 outline-none transition ease-cubic duration-200;
+    }
+    .login-btn {
+        @apply drop-shadow-md hover:drop-shadow-xl inline-block p-4 my-4 text-lg text-center rounded-full cursor-pointer transition ease-cubic duration-200;
+    }
+    .titles {
+        @apply mb-4 xs:text-5xl font-bold text-center text-4xl;
+    }
+    .subtitles {
+        @apply mb-4 text-center;
+    }
+    .reg-links {
+        @apply hover:brightness-50 hover:underline px-3 text-purple-800; 
+    }
+
+    /* js */
+    .menu-open{@apply h-full overflow-hidden md:h-auto md:overflow-auto;}
+    .menu-open #menu{@apply translate-x-0;}
+
+    .scroll #outer-header {@apply mt-0 bg-zinc-100 shadow-lg;}
+    .scroll_image #img_text p {@apply opacity-100;}
+}
+
+@layer utilities {
+    .flex-adjust {
+        @apply flex items-center justify-center;
+    }
+    .margins {
+        @apply max-w-[1200px] mx-auto;
+    }
+}
