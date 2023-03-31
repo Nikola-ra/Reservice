@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,47 @@
     <title>Conferma la tua email</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <section class="flex flex-col w-full min-h-screen">
-    <div class="logo flex items-center p-4">
-        <a href="./index.html"><img src="../img/logo.png" alt="" class="w-16 h-12"></a>
-        <a href="./index.html"><span class="p-2 text-2xl font-bold">Reservice</span></a>
-    </div>
-    <div class=" flex flex-col items-center justify-center flex-1 w-full">
-        <div class="max-w-[700px] max-h-1/2 h-[500px] flex flex-col items-center justify-evenly">
-        <span>
-            <h1 class="titles">Conferma la tua mail</h1>
-            <p class="subtitles xs:text-xl text-stone-700 text-lg"></p>
-        </span>
-        <span class='p-3 text-xl'>Testo di prova</span> 
-        <form action="" method="post" class="flex flex-col items-center">
-            <input type="text" maxlength="4" placeholder="Inserisci il codice" name="code" id="code" class="form-input w-full">
-            <input type="submit" value="Conferma" class="login-btn bg-gradient-dx text-white">
-        </form>
-        <p class="fix-pt md:pt-12 block text-center">Non hai ricevuto la mail?<a href="" class="reg-links">Invia di nuovo</a></p>
-        <!--   header("location: login.php");  prossimamente--> 
+        <svg xmlns="http://www.w3.org/2000/svg" class="md:h-auto h-28 fixed md:absolute" style="z-index: -1;" viewBox="0 0 1440 320">
+            <defs>
+                <linearGradient id="Gradient-Blu">
+                 <stop offset="0%" stop-color="#628EE0"/>
+                 <stop offset="100%" stop-color="#5CCCED"/>
+               </linearGradient>
+            </defs>
+            <path fill="url(#Gradient-Blu)" fill-opacity="1"
+                d="M0,256L30,256C60,256,120,256,180,245.3C240,235,300,213,360,213.3C420,213,480,235,540,213.3C600,192,660,128,720,122.7C780,117,840,171,900,186.7C960,203,1020,181,1080,165.3C1140,149,1200,139,1260,112C1320,85,1380,43,1410,21.3L1440,0L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
+        </svg>
+        <div class="flex items-center p-4 absolute">
+            <a href="./index.html"><img src="./img/logo_w.svg" alt="Reservice Logo" class="w-16 h-12"></a>
+            <a href="./index.html"><span class="p-2 text-2xl font-bold" style="color: white;">Reservice</span></a>
         </div>
-    </div>
+        <div class="flex flex-col items-center justify-center flex-1 w-full">
+            <div class="max-w-[700px] max-h-1/2 h-[500px] flex flex-col items-center justify-evenly">
+                <span>
+                    <h1 class="titles">Conferma la tua mail</h1>
+                    <p class="subtitles xs:text-xl text-stone-700 text-lg">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Suscipit </p>
+                </span>
+                <span class='p-3 text-xl'>lorem@ipsum.com</span>
+                <form action="" method="post" class="flex flex-col items-center">
+                    <input type="text" maxlength="4" placeholder="Inserisci il codice" class="form-input w-full">
+                    <input type="submit" value="Conferma" class="login-btn bg-gradient-dx text-white"
+                        style="width: 20vh;">
+                </form>
+                <p class="fix-pt md:pt-12 block text-center">Non hai ricevuto la mail?<a href="" class="reg-links">Invia
+                        di nuovo</a></p>
+                <!-- header("location: login.php");  prossimamente  -->
+            </div>
+        </div>
     </section>
 </body>
+
 </html>
