@@ -43,6 +43,8 @@
     .menu-open .dashboard-nav-text {@apply block;}
     .menu-open .dashboard-nav-link {@apply justify-start;}
 
+    .menu-open .dashboard-nav-link:not(:hover) svg {@apply fill-stone-400;}
+
 }
 
 @layer utilities {
