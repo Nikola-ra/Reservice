@@ -15,192 +15,56 @@
 
 <body class="bg-zinc-50">
 
-    <nav>
-        <header class="md:px-12 bg-gradient-dx fixed w-full h-16 px-6 z-50 shadow-lg">
-            <div class="margins flex items-center justify-between h-full">
-                <a href="./index.html"><img src="./img/logo_w.svg" alt="Reservice Logo" class="relative z-50 h-10"></a>
-                <nav>
-                    <ul id="menu" class="bg-gradient-dx ease-cubic md:bg-transparent pt-16 fold:flex md:p-0 md:bg-none md:static md:space-x-2 md:min-h-0 md:flex md:translate-x-0 md:space-y-0 fold:flex-row fold:space-y-0 fixed inset-0 z-40 w-full min-h-screen p-4 space-y-4 transition duration-500 translate-x-full">
-                        <li><a href="./profilo.html" class="md:m-auto block p-2 mt-12 text-white">PROFILO</a></li>
-                        <li><a href="./impostazioni.html" class="md:m-auto block p-2 mt-12 text-white">IMPOSTAZIONI</a></li>
-                        <li><a href="./faq.html" class="md:m-auto block p-2 mt-12 text-white">FAQ</a></li>
-                        <li><a href="./index.html" class="md:m-auto block p-2 mt-12 text-white">LOGOUT</a></li>
-                    </ul>
-                </nav>
-                <button id="burger" class="md:hidden z-50">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-                    </svg>
-                </button>
-            </div>
-        </header>
-    </nav>
+    <div class="w-full h-screen flex">
+        <div class="bg-neutral-800 w-72 flex flex-col">
 
-    <section class="w-full min-h-[60vh] flex flex-col">
-        <h1 class="font-bold titles pt-32">Benvenuto Giovanni</h1>
+            <section class="w-full h-32 bg-stone-700 flex-adjust">
+                    <a href="./index.html" class="flex-adjust">
+                        <img src="./img/logo.svg" alt="" class="h-10 mr-2">
+                        <p class="text-stone-200 text-xl font-bold">RESERVICE</p>
+                    </a>
+            </section>
+            
+                <ul class="flex flex-col relative h-full">
+                    <li class="hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic">
+                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M5 22h14a2 2 0 0 0 2-2v-9a1 1 0 0 0-.29-.71l-8-8a1 1 0 0 0-1.41 0l-8 8A1 1 0 0 0 3 11v9a2 2 0 0 0 2 2zm5-2v-5h4v5zm-5-8.59 7-7 7 7V20h-3v-5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v5H5z"></path></svg>
+                            Home
+                        </a>
+                    </li>
+                    <li class="hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic">
+                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3H3z"></path><path d="M15.293 14.707a.999.999 0 0 0 1.414 0l5-5-1.414-1.414L16 12.586l-2.293-2.293a.999.999 0 0 0-1.414 0l-5 5 1.414 1.414L13 12.414l2.293 2.293z"></path></svg>                            Analitica
+                        </a>
+                    </li>
+                    <li class="hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic">
+                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"></path></svg>
+                            Abbonamento
+                        </a>
+                    </li>
+                    <li class="hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic">
+                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.002 16H5V8h14l.002 12z"></path><path d="m11 17.414 5.707-5.707-1.414-1.414L11 14.586l-2.293-2.293-1.414 1.414z"></path></svg>                            Agenda
+                        </a>
+                    </li>
+                    <li class="hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic">
+                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M7 7h10v2H7zm0 4h7v2H7z"></path><path d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z"></path></svg>                            Recensioni
+                        </a>
+                    </li>
+                    <li class="absolute bottom-0 hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic w-full">
+                        <a href="./index.html" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M12 21c4.411 0 8-3.589 8-8 0-3.35-2.072-6.221-5-7.411v2.223A6 6 0 0 1 18 13c0 3.309-2.691 6-6 6s-6-2.691-6-6a5.999 5.999 0 0 1 3-5.188V5.589C6.072 6.779 4 9.65 4 13c0 4.411 3.589 8 8 8z"></path><path d="M11 2h2v10h-2z"></path></svg>                            Logout
+                        </a>
+                    </li>
+                </ul>
 
-        <section class="text-gray-600 margins flex items-center justify-center flex-1">
-            <div class="mb-8 px-5 pt-16 mx-auto">
-                <div class="flex flex-wrap -m-4">
-                    <div class="p-4 w-full md:w-1/3">
-                        <div class="h-72 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:shadow-xl transition-shadow ease-cubic" style="background-image: linear-gradient(90deg, rgb(0,0,0,0.3), rgb(0,0,0,0.3)) ,url('https://source.unsplash.com/random/'); background-position: center; background-size: cover; ">
-                            <div class="p-4 w-full h-full text-white flex flex-col items-center">
-                                <h2 class="titles">Nikola rahovic</h2>   
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 w-full md:w-1/3">
-                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:shadow-lg transition-shadow ease-cubic">
-                            <div class="p-6">
-                                <h1 class=" text-lg font-medium text-gray-900 mb-3">Imprese</h1>
-                                <p class="leading-relaxed mb-3">Visualizza tutte le imprese che utilizzano il nostro servizio</p><br>
-                                <div class="flex items-center flex-wrap">
-                                    <a href="./imprese.html" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 group">Scopri di più
-                                        <svg class="w-4 h-4 ml-2 transition-transform ease-cubic group-hover:translate-x-1.5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M1 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 w-full md:w-1/3">
-                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden hover:shadow-lg transition-shadow ease-cubic">
-                            <div class="p-6">
-                                <h1 class=" text-lg font-medium text-gray-900 mb-3">Scarica l'app</h1>
-                                <p class="leading-relaxed mb-3">Scarica la nostra applicazione disponibile per Android e IOS</p><br>
-                                <div class="flex items-center flex-wrap ">
-                                    <a href="./downloads.html" class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0 group">Scopri di più
-                                        <svg class="w-4 h-4 ml-2 transition-transform ease-cubic group-hover:translate-x-1.5" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                            <path d="M1 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-    </section>
-
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"> <path fill="#5CCCED" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,176C480,171,600,181,720,202.7C840,224,960,256,1080,245.3C1200,235,1320,181,1380,154.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    <footer class="text-black bg-gradient-to-t from-indaco to-azzurro flex-0">
-        <div class="px-5 py-16 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                <a class="flex  font-medium items-center md:justify-start justify-center text-gray-900">
-                    <img src="./img/logo_w.svg" alt="Reservice Logo" class="h-8">
-                    <span class="ml-3 text-xl">Reservice</span>
-                </a>
-                <p class="mt-2 text-sm text-black">Dimenticati di fare la fila</p>
-            </div>
-            <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class=" font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="text-black reg-links">First Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Second Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Third Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Fourth Link</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class=" font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="text-black reg-links">First Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Second Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Third Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Fourth Link</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class=" font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="text-black reg-links">First Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Second Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Third Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Fourth Link</a>
-                        </li>
-                    </nav>
-                </div>
-                <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-                    <h2 class=" font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
-                    <nav class="list-none mb-10">
-                        <li>
-                            <a class="text-black reg-links">First Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Second Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Third Link</a>
-                        </li>
-                        <li>
-                            <a class="text-black reg-links">Fourth Link</a>
-                        </li>
-                    </nav>
-                </div>
-            </div>
         </div>
+        <div class="p-2"></div>
+    </div>
 
-        <div>
-            <div class="mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-                <p class="text-black text-sm text-center sm:text-left">&copy;2023 Reservice — All rights reserved
-                </p>
-                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                    <a href="" class="text-black">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                        </svg>
-                    </a>
-                    <a href="" class="ml-3 text-black">
-                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                        </svg>
-                    </a>
-                    <a href="https://www.instagram.com/officialreservice/?igshid=YmMyMTA2M2Y%3D" class="ml-3 text-black">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                        </svg>
-                    </a>
-                    <a href="" class="ml-3 text-black">
-                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                        </svg>
-                    </a>
-                </span>
-            </div>
-        </div>
-    </footer>
-
-    <script src="./menu.js"></script>
+    <!-- <script src="./menu.js"></script> -->
 </body>
 
 </html>
