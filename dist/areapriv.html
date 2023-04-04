@@ -16,57 +16,70 @@
 <body class="bg-zinc-50">
 
     <div class="w-full h-screen flex">
-        <div class="bg-neutral-800 w-72 flex flex-col">
+        <div id="menu" class="bg-neutral-800 w-72 flex flex-col fixed overflow-y-scroll h-full top-0 -translate-x-[70%] transition duration-300 ease-cubic lg:translate-x-0">
 
-            <section class="w-full h-32 bg-stone-700 flex-adjust">
+            <section class="w-full lg:h-48 bg-stone-700 lg:flex-adjust p-6 h-auto flex justify-between">
                     <a href="./index.html" class="flex-adjust">
-                        <img src="./img/logo.svg" alt="" class="h-10 mr-2">
+                        <img src="./img/logo.svg" alt="" class="h-10 mr-2 hidden lg:block">
                         <p class="text-stone-200 text-xl font-bold">RESERVICE</p>
                     </a>
+                    <button id="burger" class="lg:hidden z-50 block md:static">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="block w-10 h-10 text-black md:text-stone-200">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                        </svg>
+                    </button>
             </section>
             
-                <ul class="flex flex-col relative h-full">
-                    <li class="border-l-4 border-indaco transition-all duration-100 ease-cubic">
-                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M5 22h14a2 2 0 0 0 2-2v-9a1 1 0 0 0-.29-.71l-8-8a1 1 0 0 0-1.41 0l-8 8A1 1 0 0 0 3 11v9a2 2 0 0 0 2 2zm5-2v-5h4v5zm-5-8.59 7-7 7 7V20h-3v-5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v5H5z"></path></svg>
-                            Home
+                <ul class="flex flex-col h-full">
+                    <li class="border-l-4 border-darkazzurro transition-all duration-100 ease-cubic group">
+                        <a href="#" class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-darkazzurro block m-4"><path d="M5 22h14a2 2 0 0 0 2-2v-9a1 1 0 0 0-.29-.71l-8-8a1 1 0 0 0-1.41 0l-8 8A1 1 0 0 0 3 11v9a2 2 0 0 0 2 2zm5-2v-5h4v5zm-5-8.59 7-7 7 7V20h-3v-5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v5H5z"></path></svg>
+                            <span class="dashboard-nav-text hidden lg:block">Home</span>
                         </a>
                     </li>
-                    <li class="hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic">
-                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3H3z"></path><path d="M15.293 14.707a.999.999 0 0 0 1.414 0l5-5-1.414-1.414L16 12.586l-2.293-2.293a.999.999 0 0 0-1.414 0l-5 5 1.414 1.414L13 12.414l2.293 2.293z"></path></svg>                            Analitica
+                    <li class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
+                        <a href="#" class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 group-hover:fill-darkazzurro block m-4"><path d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3H3z"></path><path d="M15.293 14.707a.999.999 0 0 0 1.414 0l5-5-1.414-1.414L16 12.586l-2.293-2.293a.999.999 0 0 0-1.414 0l-5 5 1.414 1.414L13 12.414l2.293 2.293z"></path></svg>
+                            <span class="dashboard-nav-text hidden lg:block">Analitica</span>
                         </a>
                     </li>
-                    <li class="hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic">
-                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"></path></svg>
-                            Abbonamento
+                    <li class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
+                        <a href="#" class="text-stone-400 place group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 group-hover:fill-darkazzurro block m-4"><path d="m6.516 14.323-1.49 6.452a.998.998 0 0 0 1.529 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082a1 1 0 0 0-.59-1.74l-5.701-.454-2.467-5.461a.998.998 0 0 0-1.822 0L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.214 4.107zm2.853-4.326a.998.998 0 0 0 .832-.586L12 5.43l1.799 3.981a.998.998 0 0 0 .832.586l3.972.315-3.271 2.944c-.284.256-.397.65-.293 1.018l1.253 4.385-3.736-2.491a.995.995 0 0 0-1.109 0l-3.904 2.603 1.05-4.546a1 1 0 0 0-.276-.94l-3.038-2.962 4.09-.326z"></path></svg>
+                            <span class="dashboard-nav-text hidden lg:block">Abbonamento</span>
                         </a>
                     </li>
-                    <li class="hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic">
-                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.002 16H5V8h14l.002 12z"></path><path d="m11 17.414 5.707-5.707-1.414-1.414L11 14.586l-2.293-2.293-1.414 1.414z"></path></svg>                            Agenda
+                    <li class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
+                        <a href="#" class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 group-hover:fill-darkazzurro block m-4"><path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm.002 16H5V8h14l.002 12z"></path><path d="m11 17.414 5.707-5.707-1.414-1.414L11 14.586l-2.293-2.293-1.414 1.414z"></path></svg>                            
+                            <span class="dashboard-nav-text hidden lg:block">Agenda</span>
                         </a>
                     </li>
-                    <li class="hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic">
-                        <a href="#" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M7 7h10v2H7zm0 4h7v2H7z"></path><path d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z"></path></svg>                            Recensioni
+                    <li class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
+                        <a href="#" class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 group-hover:fill-darkazzurro block m-4"><path d="M7 7h10v2H7zm0 4h7v2H7z"></path><path d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z"></path></svg>                            
+                            <span class="dashboard-nav-text hidden lg:block">Recensioni</span>
                         </a>
                     </li>
-                    <li class="absolute bottom-0 hover:border-l-4 hover:border-indaco border-stone-700 transition-all duration-100 ease-cubic w-full">
-                        <a href="./index.html" class="text-stone-400 text-lg flex items-center px-4 py-2.5">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 block m-4"><path d="M12 21c4.411 0 8-3.589 8-8 0-3.35-2.072-6.221-5-7.411v2.223A6 6 0 0 1 18 13c0 3.309-2.691 6-6 6s-6-2.691-6-6a5.999 5.999 0 0 1 3-5.188V5.589C6.072 6.779 4 9.65 4 13c0 4.411 3.589 8 8 8z"></path><path d="M11 2h2v10h-2z"></path></svg>                            Logout
+                    <li class="flex-1"></li>
+                    <li class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group w-full">
+                        <a href="./index.html" class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 group-hover:fill-darkazzurro block m-4"><path d="M12 21c4.411 0 8-3.589 8-8 0-3.35-2.072-6.221-5-7.411v2.223A6 6 0 0 1 18 13c0 3.309-2.691 6-6 6s-6-2.691-6-6a5.999 5.999 0 0 1 3-5.188V5.589C6.072 6.779 4 9.65 4 13c0 4.411 3.589 8 8 8z"></path><path d="M11 2h2v10h-2z"></path></svg>                            
+                            <span class="dashboard-nav-text hidden lg:block">Logout</span>
                         </a>
                     </li>
                 </ul>
 
         </div>
+
             <section class="text-gray-600 flex justify-center flex-1">
 
             </section>
     </div>
 
-    <!-- <script src="./menu.js"></script> -->
+    <script src="./menu.js"></script>
 </body>
 
 </html>

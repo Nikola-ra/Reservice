@@ -9,7 +9,7 @@ module.exports = {
         'darkblue': '#012E5A',
         'indaco': '#628EE0',
         'darkazzurro': '#60B5F7',
-        'azzurro': '#5CCCED',
+        'azzurro': '#5CCCED'
       },
       screens: {
         'fold': { 'raw': '(max-height: 300px)' },

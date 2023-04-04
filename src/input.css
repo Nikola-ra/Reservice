@@ -39,6 +39,10 @@
 
     .scroll .switchLogoWhite {@apply hidden;}
     .scroll .switchLogoColor {@apply inline-block;}
+
+    .menu-open .dashboard-nav-text {@apply block;}
+    .menu-open .dashboard-nav-link {@apply justify-start;}
+
 }
 
 @layer utilities {
