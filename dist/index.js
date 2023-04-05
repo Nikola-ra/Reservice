@@ -5,6 +5,7 @@ const addScroll = () => {
         document.body.classList.remove('scroll')
     }
 }
+
 angolo = 0;
 const animateBackground = ()=>{
     angolo = angolo+1;

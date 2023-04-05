@@ -9,7 +9,10 @@ module.exports = {
         'darkblue': '#012E5A',
         'indaco': '#628EE0',
         'darkazzurro': '#60B5F7',
-        'azzurro': '#5CCCED',
+        'azzurro': '#5CCCED'
+      },
+      gridTemplateColumns: {
+        'bello': 'repeat(4, minmax(0, 1fr))'
       },
       screens: {
         'fold': { 'raw': '(max-height: 300px)' },
