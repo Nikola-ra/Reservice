@@ -15,16 +15,13 @@
 
 <body class="bg-zinc-50">
 
-    <header class="bg-zinc-200 w-full h-28 sm:hidden flex items-center p-4">
-        <button class="burger">
+        <button class="burger absolute top-4 left-4 sm:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="block w-10 h-10 text-stone-700">
             <path stroke-linecap="round" stroke-linejoin="round"
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
             </svg>
         </button>
-    </header>
-
 
     <div class="w-full h-screen flex">
         <div id="menu" class="bg-neutral-800 w-72 flex flex-col fixed overflow-y-auto h-full top-0 sm:-translate-x-[70%] -translate-x-full transition duration-300 ease-cubic lg:translate-x-0">
@@ -42,16 +39,15 @@
                         </svg>
                     </button>
             </section>
-            
                 <ul class="flex flex-col h-full">
-                    <li class="border-l-4 border-darkazzurro transition-all duration-100 ease-cubic group">
-                        <a href="#" class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                    <li class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
+                        <a href="./areapriv.html" class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="sm:fill-darkazzurro lg:fill-stone-400 group-hover:fill-darkazzurro block m-4"><path d="M5 22h14a2 2 0 0 0 2-2v-9a1 1 0 0 0-.29-.71l-8-8a1 1 0 0 0-1.41 0l-8 8A1 1 0 0 0 3 11v9a2 2 0 0 0 2 2zm5-2v-5h4v5zm-5-8.59 7-7 7 7V20h-3v-5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v5H5z"></path></svg>
                             <span class="dashboard-nav-text hidden lg:block">Home</span>
                         </a>
                     </li>
-                    <li class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
-                        <a href="./anaytics.html" class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                    <li class="border-l-4 border-darkazzurro transition-all duration-100 ease-cubic group">
+                        <a href="#" class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-stone-400 group-hover:fill-darkazzurro block m-4"><path d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3H3z"></path><path d="M15.293 14.707a.999.999 0 0 0 1.414 0l5-5-1.414-1.414L16 12.586l-2.293-2.293a.999.999 0 0 0-1.414 0l-5 5 1.414 1.414L13 12.414l2.293 2.293z"></path></svg>
                             <span class="dashboard-nav-text hidden lg:block">Analitica</span>
                         </a>
@@ -85,7 +81,47 @@
 
         </div>
 
-            <section class="flex justify-center flex-1 lg:ml-72 sm:ml-[88px]">
+            <section class="flex-1 h-screen lg:ml-72 sm:ml-[88px] overflow-y-auto overflow-x-hidden">   <!-- Home --> 
+
+                <div class="mt-10 flex flex-col sm:flex-row w-full items-center justify-evenly flex-wrap">
+                    <div class="w-full 2xl:w-1/2 flex flex-col sm:flex-row">
+                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
+                            <p class="text-xl text-slate-600">Investimenti</p>
+                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span class="text-2xl align-super ml-2">€</span></span>
+                                <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
+                                    <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
+                                    8,541€
+                                </span>
+                        </div>
+                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
+                            <p class="text-xl text-slate-600">Investimenti</p>
+                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span class="text-2xl align-super ml-2">€</span></span>
+                                <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
+                                    <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
+                                    8,541€
+                                </span>
+                        </div>
+                    </div>
+                    <div class="w-full 2xl:w-1/2 flex flex-col sm:flex-row">
+                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
+                            <p class="text-xl text-slate-600">Investimenti</p>
+                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span class="text-2xl align-super ml-2">€</span></span>
+                                <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
+                                    <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
+                                    8,541€
+                                </span>
+                        </div>
+                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
+                            <p class="text-xl text-slate-600">Investimenti</p>
+                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span class="text-2xl align-super ml-2">€</span></span>
+                                <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
+                                    <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path></svg>
+                                    8,541€
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
             </section>
     </div>
 

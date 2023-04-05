@@ -11,6 +11,9 @@ module.exports = {
         'darkazzurro': '#60B5F7',
         'azzurro': '#5CCCED'
       },
+      gridTemplateColumns: {
+        'bello': 'repeat(4, minmax(0, 1fr))'
+      },
       screens: {
         'fold': { 'raw': '(max-height: 300px)' },
         'xs': '360px'
