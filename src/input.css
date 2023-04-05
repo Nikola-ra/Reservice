@@ -31,11 +31,20 @@
     /* js */
     .menu-open{@apply h-full overflow-hidden md:h-auto md:overflow-auto;}
     .menu-open #menu{@apply translate-x-0;}
+    .menu-open .switchLogoWhite {@apply hidden;}
+    .menu-open .switchLogoColor {@apply inline-block;}
 
+    .menu-open #outer-header,
     .scroll #outer-header {@apply mt-0 bg-zinc-100 shadow-lg;}
 
     .scroll .switchLogoWhite {@apply hidden;}
     .scroll .switchLogoColor {@apply inline-block;}
+
+    .menu-open .dashboard-nav-text {@apply block;}
+    .menu-open .dashboard-nav-link {@apply justify-start;}
+
+    .menu-open .dashboard-nav-link:not(:hover) svg {@apply fill-stone-400;}
+
 }
 
 @layer utilities {

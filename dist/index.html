@@ -15,7 +15,6 @@
 
 <body class="bg-zinc-50">
 
-    <nav>
         <header id="outer-header"
             class="md:px-12 my-4 fixed w-full h-16 block py-10 px-6 z-50 menu-transition duration-300 ease-cubic">
             <div class="margins flex items-center justify-between h-full">
@@ -26,6 +25,7 @@
                         class="ease-cubic bg-zinc-100 md:bg-transparent pt-16 fold:flex md:p-0 md:bg-none md:static md:space-x-2 md:min-h-0 md:flex md:translate-x-0 md:space-y-0 fold:flex-row fold:space-y-0 fixed inset-0 z-40 w-full min-h-screen p-4 space-y-4 transition duration-500 translate-x-full">
                         <li><a href="./login.html" class="md:m-auto block p-2 mt-12 text-darkblue">LOGIN</a></li>
                         <li><a href="./reg.html" class="md:m-auto block p-2 mt-12 text-darkblue">REGISTRATI</a></li>
+                        <li><a href="./reg.html" class="md:m-auto block p-2 mt-12 text-darkblue">COLLABORA CON NOI</a></li>
                     </ul>
                 </nav>
                 <button id="burger" class="md:hidden z-50 block">
@@ -37,35 +37,35 @@
                 </button>
             </div>
         </header>
-    </nav>
 
-    <section class="w-full min-h-[180vh] md:min-h-[150vh] bg-gradient-to-r from-indaco to-azzurro" style="background: linear-gradient(90deg, rgba(98,142,224,1) 0%, rgba(92,204,237,1) 100%);" id="mainSegment">
+    <section class="w-full bg-gradient-to-r from-indaco to-azzurro" id="mainSegment">
         <section class="margins min-h-screen flex flex-col">
-            <div class="w-full h-[25vh] min-h-[80px]"></div>
-            <div class="flex flex-col md:flex-row">
-                <section class="flex-1 flex">
-                    <section class="flex-1 p-4 flex-col flex">
-                        <h1 class="titles lg:text-6xl md:text-left md:text-5xl fold:text-4xl text-darkblue">Usa il tuo <span
-                                class="text-zinc-100">tempo</span> per fare ciò che ami.</h1>
-                        <p class="text-xl text-center md:text-left pr-6 py-2 text-darkblue">Prenota tutto e organizza al meglio i tuoi
-                            impegni. Evita lo spreco di tempo e risorse grazie al nostro incredibile servizio.</p>
-                        <button class="flex-adjust md:justify-start w-full drop-shadow-lg cursor-default">
-                            <a href="./come-funziona.html"
-                                class="mb-10 inline-block text-xl px-10 py-3 hover:text-darkblue hover:bg-slate-100 text-slate-100 bg-darkblue font-bold transition ease-cubic duration-300 rounded-md mt-16">Inizia subito!</a>
-                        </button>
+            <div class="w-full flex flex-col h-screen">
+                <div class="w-full h-[25vh] min-h-[80px]"></div>
+                <div class="flex flex-col md:flex-row">
+                    <section class="flex-1 flex">
+                        <section class="flex-1 p-4 flex-col flex">
+                            <h1 class="titles lg:text-6xl md:text-left md:text-5xl fold:text-4xl text-darkblue">Usa il tuo <span
+                                    class="text-zinc-100">tempo</span> per fare ciò che ami.</h1>
+                            <p class="text-xl text-center md:text-left pr-6 py-2 text-darkblue">Prenota tutto e organizza al meglio i tuoi
+                                impegni. Evita lo spreco di tempo e risorse grazie al nostro incredibile servizio.</p>
+                            <button class="flex-adjust md:justify-start w-full drop-shadow-lg cursor-default">
+                                <a href="./come-funziona.html"
+                                    class="mb-10 inline-block text-xl px-10 py-3 hover:text-darkblue hover:bg-slate-100 text-slate-100 bg-darkblue font-bold transition ease-cubic duration-300 rounded-md mt-16">Inizia subito!</a>
+                            </button>
+                        </section>
                     </section>
-                </section>
-                <section class="flex flex-1 relative">
-                    <section class="flex-1 flex items-center justify-center">
-                        <img class="w-56 ml-32 hidden md:block" src="./img/hero_image.webp" alt="Telefono Reservice">
+                    <section class="flex flex-1 relative">
+                        <section class="flex-1 flex items-center justify-center">
+                            <img class="w-56 ml-32 hidden md:block" src="./img/hero_image.webp" alt="Telefono Reservice">
+                        </section>
                     </section>
-                </section>
+                </div>
+    
             </div>
 
-
-            <section class="text-gray-800">
-                <div class="px-5 py-24 mt-16 mx-auto">
-                  <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+            <section class="text-gray-800 mb-32 md:mt-4">
+                  <div class="flex flex-wrap">
                     <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
                       <div class="w-48 h-48 inline-flex items-center justify-center rounded-full bg-purple-100 mb-5 flex-shrink-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="135" height="135" viewBox="0 0 24 24" class="fill-icons"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm3.293 14.707L11 12.414V6h2v5.586l3.707 3.707-1.414 1.414z"></path></svg>
@@ -90,46 +90,45 @@
                       </div>
                       <div class="flex-grow">
                         <h2 class="text-gray-900 text-xl font-medium mb-3">Semplifica i tuoi problemi</h2>
-                        <p class="leading-relaxed text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, accusamus Lorem ipsum dolor</p>
+                        <p class="leading-relaxed text-lg">Concedici di mostrarti la nostra efficienza, inizia a semplificare la tua vita quotidiana con Reservice!</p>
                       </div>
                     </div>
                   </div>
-                </div>
               </section>
         </section>
     </section>
 
-    <section class="w-full min-h-[75vh] my-16">
-      <div class="margins min-h-[75vh] flex-adjust flex-col-reverse md:flex-row">
+    <section class="w-full my-32">
+      <div class="margins flex-adjust flex-col-reverse md:flex-row">
         <section class="flex-adjust flex-1">
-          <img src="https://source.unsplash.com/random/" alt="" class="md:w-[546px] p-2.5 rounded-xl md:rounded-md md:p-0 h-72 w-screen md:h-96 md:mr-8 object-cover">
+          <img src="https://source.unsplash.com/random/" alt="" class="drop-shadow-lg md:w-[546px] p-2.5 rounded-xl md:rounded-md md:p-0 h-72 w-screen md:h-96 md:mr-8 object-cover">
         </section>
         <section class="flex-1 space-y-10 p-4 flex flex-col justify-end">
-          <h2 class="titles md:text-left">Di cosa vuoi parlare?</h2>
-          <p class="text-center md:text-left text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptas temporibus necessitatibus sint ullam! Iure, culpa. Adipisicing elit. Repellat voluptas temporibus necessitatibus sint ullam! Iure, culpa</p>
-          <p class="text-center md:text-left text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptas temporibus necessitatibus sint ullam! Iure, culpa</p>
+          <h2 class="titles md:text-left">Chi siamo</h2>
+          <p class="text-center md:text-left text-lg">Reservice è una startup nata per aiutare la collettività nel time-management quotidiano, siamo un buisness in sviluppo crescente adatto a ogni tipo di persona o impresa!</p>
+          <p class="text-center md:text-left text-lg">Unisciti al nostro percorso per aumentare la tua produttività e qualità di vita </p>
         </section>
       </div>
     </section>
 
-    <section class="w-full min-h-[75vh] mb-16 md:mb-0">
-      <div class="margins min-h-[75vh] flex-adjust flex-col md:flex-row">
+    <section class="w-full mb-16 md:mb-0">
+      <div class="margins flex-adjust flex-col md:flex-row">
         <section class="flex-1 space-y-6 flex flex-col justify-end p-4">
-          <h2 class="titles md:text-left">Di cosa vuoi parlare?</h2>
-          <p class="text-center md:text-left text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptas temporibus necessitatibus sint ullam! Iure, culpa. Sit amet consectetur adipisicing elit. Repellat voluptas temporibus necessitatibus sint ullam! Iure, culpa</p>
-          <p class="text-center md:text-left text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat voluptas temporibus necessitatibus sint ullam! Iure, culpa</p>
+          <h2 class="titles md:text-left">Cosa facciamo</h2>
+          <p class="text-center md:text-left text-lg">Se hai una vita frenetica, piena di attività e cerchi la svolta, sei nel posto giusto! ti aiuteremo a gestire il tuo tempo con il nostro servizio, senza che tu debba spenderne altro</p>
+          <p class="text-center md:text-left text-lg">Cosa aspetti? unisciti a noi, unisciti a reservice!</p>
         </section>
         <section class="flex-adjust flex-1">
-          <img src="https://source.unsplash.com/random/" alt="" class="md:w-[546px] p-2.5 rounded-xl md:rounded-md h-72 md:p-0 w-screen md:h-96 md:ml-8 object-cover">
+          <img src="./img/what_we_do.webp" alt="" class="drop-shadow-lg md:w-[546px] p-2.5 rounded-xl md:rounded-md h-72 md:p-0 w-screen md:h-96 md:ml-8 object-cover">
         </section>
       </div>
     </section>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5CCCED" fill-opacity="1" d="M0,224L60,213.3C120,203,240,181,360,176C480,171,600,181,720,202.7C840,224,960,256,1080,245.3C1200,235,1320,181,1380,154.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    <section class="w-full h-[50vh] p-2.5 bg-gradient-to-t from-indaco to-azzurro flex flex-col items-center justify-center pb-16">
-      <h2 class="titles">Unisciti a noi</h2>
-      <p class="text-xl text-center">Inizia subito ad utilizzare il nostro servizio!</p>
-      <a href="./reg.html" class="mb-10 inline-block text-xl px-10 py-3 hover:text-darkblue hover:bg-slate-100 text-slate-100 drop-shadow-lg bg-darkblue font-bold transition ease-cubic duration-300 rounded-md mt-16">Registrati ora!</a>
+    <section class="w-full p-2.5 bg-gradient-to-t from-indaco to-azzurro flex flex-col items-center justify-center pb-16">
+      <h2 class="titles">Sei un'azienda?</h2>
+      <p class="text-xl text-center">Diventa subito nostro partner!</p>
+      <a href="./reg.html" class="mb-10 inline-block text-xl px-10 py-3 hover:text-darkblue hover:bg-slate-100 text-slate-100 drop-shadow-lg bg-darkblue font-bold transition ease-cubic duration-300 rounded-md mt-16">Procedi</a>
     </section>
 
 
