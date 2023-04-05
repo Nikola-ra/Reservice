@@ -10,32 +10,32 @@
                 header('location: areapriv.php');}
             
             //PRENDE I DATI
-            $nome = $_POST['user']; 
-            $pass = md5($_POST['pass']); 
+            $mail = $_POST['user']; 
+            $password = $_POST['pass'];
             
             //CHECK
 
-            if ($nome != "" && $pass != ""){
-                $qr = ("SELECT * FROM user WHERE user='$nome'");    
+            if ($mail != "" && $password != ""){
+                $qr = ("SELECT * FROM user WHERE user='$mail'");    
                 $result = mysqli_query($db,$qr); 
 
                 $linea = mysqli_fetch_array($result, MYSQLI_ASSOC); //ARRAY
                 $numeroLinee = mysqli_num_rows($result);  //NUMERO LINEE 
 
                 if($numeroLinee > 0){
-                    $name = $linea["user"];  // PRENDE USER E PASSWORD DAL DB
-                    $password = $linea["password"]; 
+                    $dbMail = $linea["user"];  // PRENDE USER E PASSWORD DAL DB
+                    $dbPassword = $linea["password"]; 
                     $verificato = $linea["verificato"]; 
 
-                        if ($name == $nome && $pass == $password){
+                        if ($dbMail == $mail && password_verify($password, $dbPassword)==true){
                             if ($verificato == 1){
                                 $_SESSION['valid'] = true;
                                 $_SESSION['timeout'] = time();
-                                $_SESSION['username'] = $name;
+                                $_SESSION['username'] = $dbMail;
                                 header('location: areapriv.php');
                             }else{// MANDA ALLA VERIFICA
                                 header('location = conferma.php');
-                                $_SESSION['mail'] = $nome;
+                                $_SESSION['mail'] = $mail;
                             }
                         
                         }else{

@@ -38,7 +38,7 @@ while (!feof($handler)) {
                             $message = "Attenzione, l'email è gia in uso!";
                         }else{
                             $code = rand(1000,9999);
-                            $pass = md5($pass);
+                            $pass = password_hash($pass,PASSWORD_BCRYPT);
                             $qr = "INSERT into user (user,password,code) VALUES ('$user', '$pass','$code')";
                             $result = mysqli_query($db,$qr);
                             if ($result){
