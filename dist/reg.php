@@ -36,7 +36,8 @@ while (!feof($handler)) {
 
                         if($num_rows >0 ){
                             $message = "Attenzione, l'email è gia in uso!";
-                        }else{
+                        }
+                        else{
                             $code = rand(1000,9999);
                             $pass = password_hash($pass,PASSWORD_BCRYPT);
                             $qr = "INSERT into user (user,password,code) VALUES ('$user', '$pass','$code')";
@@ -46,19 +47,20 @@ while (!feof($handler)) {
                                 session_start();
                                 $_SESSION['mail'] = $user;
                                 header("location: conferma.php");
-                                }else{
+                            }
+                            else{
                                     $message = "Errore nella registrazione! Assicurati di aver inserito tutti i dati!";
-                                }}
-                            }else{echo "Le due password devono avere piu di 8 caratteri";}         
-                    }else{
-                        $message = "Le due password devono corrispondere!";
+                            }
                         }
-
                     }
-                    
-                
-            
-
+                    else{
+                        echo "Le due password devono avere piu di 8 caratteri";
+                    }         
+                }
+                else{
+                        $message = "Le due password devono corrispondere!";
+                }
+            }
             ?>
 
 
