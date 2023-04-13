@@ -16,7 +16,7 @@
 
 <body class="bg-zinc-50">
 
-    <header class="bg-zinc-200 w-full h-28 sm:hidden flex items-center p-4">
+    <header class="w-full sm:hidden flex items-center p-4 border-b border-zinc-200 fixed">
         <button class="burger">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 class="block w-10 h-10 text-stone-700">
@@ -47,8 +47,8 @@
 
             <ul class="flex flex-col h-full">
                 <li class="border-l-4 border-darkazzurro transition-all duration-100 ease-cubic group">
-                    <a href="#"
-                        class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                    <a
+                        class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             class="sm:fill-darkazzurro lg:fill-stone-400 group-hover:fill-darkazzurro block m-4">
                             <path
@@ -60,8 +60,8 @@
                 </li>
                 <li
                 class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
-                <a href="#"
-                    class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                <a
+                    class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         class="fill-stone-400 group-hover:fill-darkazzurro block m-4">
                         <path
@@ -74,8 +74,8 @@
             </li>
                 <li
                     class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
-                    <a href="./anaytics.html"
-                        class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                    <a
+                        class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             class="fill-stone-400 group-hover:fill-darkazzurro block m-4">
                             <path d="M3 3v17a1 1 0 0 0 1 1h17v-2H5V3H3z"></path>
@@ -88,8 +88,8 @@
                 </li>
                 <li
                     class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
-                    <a href="#"
-                        class="text-stone-400 place group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                    <a
+                        class="text-stone-400 cursor-pointer place group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             class="fill-stone-400 group-hover:fill-darkazzurro block m-4">
                             <path
@@ -101,8 +101,8 @@
                 </li>
                 <li
                     class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group">
-                    <a href="#"
-                        class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                    <a
+                        class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             class="fill-stone-400 group-hover:fill-darkazzurro block m-4">
                             <path d="M7 7h10v2H7zm0 4h7v2H7z"></path>
@@ -116,8 +116,8 @@
                 <li class="flex-1"></li>
                 <li
                     class="hover:border-l-4 hover:border-darkazzurro border-stone-700 transition-all duration-100 ease-cubic group w-full">
-                    <a href="./index.html"
-                        class="text-stone-400 group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                    <a
+                        class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                             class="fill-stone-400 group-hover:fill-darkazzurro block m-4">
                             <path
@@ -141,10 +141,81 @@
         </div>
 
         <section class="flex justify-center flex-1 lg:ml-72 sm:ml-[88px]">
+
+            <!-- ANALYTICS -->
+            <section class="area-section w-full min-h-screen">
+
+                <div class="mt-20 flex flex-col sm:flex-row w-full h-min items-center justify-evenly flex-wrap">
+                    <div class="w-full 2xl:w-1/2 flex flex-col sm:flex-row">
+                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
+                            <p class="text-xl text-slate-600">Investimenti</p>
+                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span
+                                    class="text-2xl align-super ml-2">€</span></span>
+                            <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
+                                <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                                8,541€
+                            </span>
+                        </div>
+                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
+                            <p class="text-xl text-slate-600">Investimenti</p>
+                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span
+                                    class="text-2xl align-super ml-2">€</span></span>
+                            <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
+                                <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                                8,541€
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w-full 2xl:w-1/2 flex flex-col sm:flex-row">
+                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
+                            <p class="text-xl text-slate-600">Investimenti</p>
+                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span
+                                    class="text-2xl align-super ml-2">€</span></span>
+                            <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
+                                <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                                8,541€
+                            </span>
+                        </div>
+                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
+                            <p class="text-xl text-slate-600">Investimenti</p>
+                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span
+                                    class="text-2xl align-super ml-2">€</span></span>
+                            <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
+                                <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
+                                    </path>
+                                </svg>
+                                8,541€
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
         </section>
     </div>
 
     <script src="./menu.js"></script>
+    <script src="./areapriv.js"></script>
 </body>
 
 </html>
