@@ -45,6 +45,9 @@
 
     .menu-open .dashboard-nav-link:not(:hover) svg {@apply fill-stone-400;}
 
+    .border-not-hover {@apply hover:border-l-4 hover:border-darkazzurro border-stone-700 fill-slate-400 hover:fill-darkazzurro hover:text-darkazzurro;}
+    .border-hover {@apply border-l-4 border-darkazzurro sm:fill-darkazzurro lg:fill-stone-400 hover:fill-darkazzurro;}
+
 }
 
 @layer utilities {
