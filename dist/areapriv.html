@@ -16,7 +16,7 @@
 
 <body class="bg-zinc-50">
 
-    <header class="w-full sm:hidden flex items-center p-4 border-b border-zinc-200 fixed">
+    <header class="w-full sm:hidden flex items-center p-4 bg-darkazzurro fixed">
         <button class="burger">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 class="block w-10 h-10 text-stone-700">
@@ -143,7 +143,7 @@
 
         </div>
 
-        <section class="flex justify-center flex-1 lg:ml-72 sm:ml-[88px]">  <!-- ROUTER -->
+        <section class="flex justify-center flex-1 lg:ml-72 sm:ml-[88px] -z-20 bg-gray-200 h-max">  <!-- ROUTER -->
 
             <!-- DASHBOARD -->
             <section id="dashboard-p" class="w-full min-h-screen">
@@ -156,14 +156,17 @@
             </section>
 
             <!-- ANALYTICS -->
-            <section id="analitica-p" class="w-full min-h-screen" style="display: none;">
+            <section id="analitica-p" class="w-full min-h-screen relative" style="display: none;">
 
-                <div class="mt-20 flex flex-col sm:flex-row w-full h-min items-center justify-evenly flex-wrap">
+                <div class="absolute h-48 bg-darkazzurro w-full -z-10"></div>
+
+                <h2 class="p-4 mt-6 text-4xl text-stone-700">Analitica</h2>
+
+                <div class="flex flex-col sm:flex-row w-full h-min items-center justify-evenly flex-wrap">
                     <div class="w-full 2xl:w-1/2 flex flex-col sm:flex-row">
-                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
-                            <p class="text-xl text-slate-600">Investimenti</p>
-                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span
-                                    class="text-2xl align-super ml-2">€</span></span>
+                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min">
+                            <p class="text-xl text-slate-600">Prenotazioni</p>
+                            <span class="block w-full text-center mt-4 text-6xl text-slate-700 font-bold">648</span>
                             <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
                                 <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24">
@@ -171,12 +174,12 @@
                                         d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
                                     </path>
                                 </svg>
-                                8,541€
+                                121
                             </span>
                         </div>
-                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
-                            <p class="text-xl text-slate-600">Investimenti</p>
-                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span
+                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min">
+                            <p class="text-xl text-slate-600">Profitto</p>
+                            <span class="block w-full text-center mt-4 text-6xl text-slate-700 font-bold">2,389<span
                                     class="text-2xl align-super ml-2">€</span></span>
                             <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
                                 <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -190,10 +193,10 @@
                         </div>
                     </div>
                     <div class="w-full 2xl:w-1/2 flex flex-col sm:flex-row">
-                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
-                            <p class="text-xl text-slate-600">Investimenti</p>
-                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span
-                                    class="text-2xl align-super ml-2">€</span></span>
+                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min">
+                            <p class="text-xl text-slate-600">Interesse</p>
+                            <span class="block w-full text-center mt-4 text-6xl text-slate-700 font-bold">41,2<span
+                                    class="text-2xl align-super ml-2">%</span></span>
                             <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
                                 <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24">
@@ -201,13 +204,13 @@
                                         d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
                                     </path>
                                 </svg>
-                                8,541€
+                                8,5%
                             </span>
                         </div>
-                        <div class="rounded-xl bg-zinc-100 p-4 flex-1 m-4 border border-zinc-300 min-w-min">
-                            <p class="text-xl text-slate-600">Investimenti</p>
-                            <span class="block w-full text-center mt-6 text-6xl text-slate-700 font-bold">22,389<span
-                                    class="text-2xl align-super ml-2">€</span></span>
+                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min">
+                            <p class="text-xl text-slate-600">Valutazione</p>
+                            <span class="block w-full text-center mt-4 text-6xl text-slate-700 font-bold">4,6<span
+                                    class="text-2xl align-super ml-2">/5</span></span>
                             <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
                                 <svg class="fill-emerald-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24">
@@ -215,7 +218,7 @@
                                         d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z">
                                     </path>
                                 </svg>
-                                8,541€
+                                1,1
                             </span>
                         </div>
                     </div>
