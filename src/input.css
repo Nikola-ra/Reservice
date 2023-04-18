@@ -27,6 +27,9 @@
     .reg-links {
         @apply hover:brightness-50 hover:underline px-3 text-purple-800; 
     }
+    .slide, .slide2 {
+        @apply bg-white p-12 rounded-xl text-center text-red-500 titles mb-0;
+    }
 
     /* js */
     .menu-open{@apply h-full overflow-hidden md:h-auto md:overflow-auto;}
@@ -45,6 +48,9 @@
 
     .menu-open .dashboard-nav-link:not(:hover) svg {@apply fill-stone-400;}
 
+    .border-not-hover {@apply hover:border-l-4 hover:border-darkazzurro border-stone-700 fill-slate-400 hover:fill-darkazzurro hover:text-darkazzurro;}
+    .border-hover {@apply border-l-4 border-darkazzurro sm:fill-darkazzurro lg:fill-stone-400 hover:fill-darkazzurro;}
+    
 }
 
 @layer utilities {
