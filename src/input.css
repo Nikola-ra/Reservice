@@ -27,6 +27,9 @@
     .reg-links {
         @apply hover:brightness-50 hover:underline px-3 text-purple-800; 
     }
+    .slide, .slide2 {
+        @apply bg-white p-12 rounded-xl text-center text-red-500 titles mb-0;
+    }
 
     /* js */
     .menu-open{@apply h-full overflow-hidden md:h-auto md:overflow-auto;}
