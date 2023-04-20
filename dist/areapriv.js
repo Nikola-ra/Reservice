@@ -81,11 +81,11 @@ const abbonamentiStandard = () => {
     let tmpStr = ''
     for (let i = 0; i < Object.keys(prezzi).length; i++) {
         tmpStr += `<div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-            <div class="h-full p-6 rounded-lg border-2 border-sky-500 flex flex-col relative overflow-hidden">
-            <h2 class="text-sm tracking-widest title-font mb-1 font-medium">${Object.values(prezzi)[i].tipo}</h2>
+            <div class="h-full p-6 rounded-lg border-2 bg-zinc-50 flex flex-col relative overflow-hidden">
+            <h2 class="text-sm tracking-widest mb-1">${Object.values(prezzi)[i].tipo}</h2>
             <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                 <span>€${Object.values(prezzi)[i]["standard"]}</span>
-                <span class="text-lg ml-1 font-normal text-gray-500">/${Object.keys(prezzi)[i]}</span>
+                <span class="text-lg ml-1 text-gray-500">/${Object.keys(prezzi)[i]}</span>
             </h1>
             <p class="flex items-center text-gray-600 mb-2">
                 <span
@@ -144,7 +144,7 @@ const abbonamentiPremium = () => {
     let tmpStr = ''
     for (let i = 0; i < Object.keys(prezzi).length; i++) { 
         tmpStr += `<div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-            <div class="h-full p-6 rounded-lg border-2 border-sky-500 flex flex-col relative overflow-hidden">
+            <div class="h-full p-6 rounded-lg border-2 bg-zinc-50 flex flex-col relative overflow-hidden">
             <h2 class="text-sm tracking-widest title-font mb-1 font-medium">${Object.values(prezzi)[i].tipo}</h2>
             <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                 <span>€${Object.values(prezzi)[i]["premium"]}</span>
