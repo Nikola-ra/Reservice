@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area utente</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        input:invalid+span::after {
+            position: absolute;
+            content: "✖";
+            padding-left: 5px;
+        }
+
+        input:valid+span::after {
+            position: absolute;
+            content: "✓";
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-100 min-h-screen">
+
+    <section id="sezione-giorni" class="relative flex items-center w-1/3 bg-darkazzurro min-h-screen text-2xl">
+        <div class="absolute top-10 w-full titles">Scegli l'ora per la tua prenotazione!</div>
+        <div class="flex-1 flex p-3">
+            <form>
+                <label for="appt-time" class="text-md">
+                    Orari disponibili dalle 7:00 fino alle 18:00:
+                </label>
+                <input class="slide ml-20" id="appt-time" type="time" name="appt-time" min="7:00" max="18:00" />
+                <span class="validity absolute"></span>
+            </form>
+
+        </div>
+        <div>
+            <button class="px-4 py-2 m-4 border-2 border-black rounded-lg">
+                <a href="./giorni.html">Passa a giorni</a>
+            </button>
+        </div>
+    </section>
+
+    <script src="./areauser.js"></script>
+</body>
+
+</html>
+
+<!-- clicca azienda da prenotare con tasto prenota => nuova pagina con giorni (calendario) -> ore disponibili -> prenota -->

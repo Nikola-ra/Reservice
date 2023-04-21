@@ -1,46 +1,109 @@
+class Route {
+    constructor(target,param){
+        this.target = target
+        this.param = param
+    }
+}
+
 const clearInnerElements = (element) => {
     while (element.firstChild) {
         element.removeChild(element.lastChild)
       }
 }
 
-/* ROUTING DEL MENU */
-
-class Route {
-    constructor(pagina,icona) {
-        this.pagina = pagina
-        this.icona = icona
+const clearNone = (pagine) => {
+    for (let i = 0; i < pagine.length; i++) {
+        pagine[i].style.display = 'none'
     }
-
-    routeTo() {this.pagina.style.display = 'block'}
 }
 
-const dashboard = new Route(document.querySelector('#dashboard-p'),document.querySelector('#dashboard-i'))
-const agenda = new Route(document.querySelector('#agenda-p'),document.querySelector('#agenda-i'))
-const analitica = new Route(document.querySelector('#analitica-p'),document.querySelector('#analitica-i'))
-const abbonamenti = new Route(document.querySelector('#abbonamenti-p'),document.querySelector('#abbonamenti-i'))
-const recensioni = new Route(document.querySelector('#recensioni-p'),document.querySelector('#recensioni-i'))
+const urlParams = new URLSearchParams(window.location.search)
 
-const router = [dashboard,agenda,analitica,abbonamenti,recensioni]
+const dashboard = document.querySelector('#dashboard-p')
+const agenda = document.querySelector('#agenda-p')
+const analitica = document.querySelector('#analitica-p')
+const abbonamenti = document.querySelector('#abbonamenti-p')
+const recensioni = document.querySelector('#recensioni-p')
 
-const clearAllRoutes = (sections) => {
-    sections.forEach((section)=>{
-        section.pagina.style.display = 'none'
-        section.icona.classList.remove('border-hover')
-        section.icona.classList.add('border-not-hover')
-    })
-}
+const dashboardI = new Route(document.querySelector('#dashboard-i'),'dashboard')
+const agendaI = new Route(document.querySelector('#agenda-i'),'agenda')
+const analiticaI = new Route(document.querySelector('#analitica-i'),'analitica')
+const abbonamentiI = new Route(document.querySelector('#abbonamenti-i'),'abbonamenti')
+const recensioniI = new Route(document.querySelector('#recensioni-i'),'recensioni')
 
-router.forEach((route) => {
-    route.icona.addEventListener('click',()=>{
-        clearAllRoutes(router)
-        route.routeTo()
-        document.body.classList.remove('menu-open')
-        route.icona.classList.remove('border-not-hover')
-        route.icona.classList.add('border-hover')
-    })
+const icone = [dashboardI,agendaI,analiticaI,abbonamentiI,recensioniI]
+
+addEventListener('DOMContentLoaded',()=>{
+    console.log(myParam)
+    switch (myParam) {
+        
+        case dashboardI.param:
+            document.body.classList.remove('menu-open')
+            dashboardI.target.classList.remove('border-not-hover')
+            dashboardI.target.classList.add('border-hover')
+            break
+        case agendaI.param:
+            document.body.classList.remove('menu-open')
+            agendaI.target.classList.remove('border-not-hover')
+            agendaI.target.classList.add('border-hover') 
+            break
+        case analiticaI.param:
+            document.body.classList.remove('menu-open')
+            analiticaI.target.classList.remove('border-not-hover')
+            analiticaI.target.classList.add('border-hover')
+            break
+        case abbonamentiI.param:
+            document.body.classList.remove('menu-open')
+            abbonamentiI.target.classList.remove('border-not-hover')
+            abbonamentiI.target.classList.add('border-hover')
+            break
+        case recensioniI.param:
+            document.body.classList.remove('menu-open')
+            recensioniI.target.classList.remove('border-not-hover')
+            recensioniI.target.classList.add('border-hover')
+            break
+        default:
+            document.body.classList.remove('menu-open')
+            dashboardI.target.classList.remove('border-not-hover')
+            dashboardI.target.classList.add('border-hover')
+            break
+    }
 })
 
+icone.forEach((link) => {
+    link.target.addEventListener('click',()=>{window.location.href = `areapriv.html?L=${link.param}`})
+})
+
+const pagine = [dashboard,agenda,analitica,abbonamenti,recensioni]
+
+const myParam = urlParams.get('L')
+
+switch (myParam) {
+    case dashboardI.param:
+        clearNone(pagine)
+        dashboard.style.display = 'block'
+        break
+    case agendaI.param:
+        clearNone(pagine)
+        agenda.style.display = 'block'
+        break
+    case analiticaI.param:
+        clearNone(pagine)
+        analitica.style.display = 'block'
+        break
+    case abbonamentiI.param:
+        clearNone(pagine)
+        abbonamenti.style.display = 'block'
+        break
+    case recensioniI.param:
+        clearNone(pagine)
+        recensioni.style.display = 'block'
+        break
+    default:
+        clearNone(pagine)
+        dashboard.style.display = 'block'
+        break
+}
 
 /* ABBONAMENTI */
 
@@ -81,11 +144,11 @@ const abbonamentiStandard = () => {
     let tmpStr = ''
     for (let i = 0; i < Object.keys(prezzi).length; i++) {
         tmpStr += `<div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-            <div class="h-full p-6 rounded-lg border-2 border-sky-500 flex flex-col relative overflow-hidden">
-            <h2 class="text-sm tracking-widest title-font mb-1 font-medium">${Object.values(prezzi)[i].tipo}</h2>
+            <div class="h-full p-6 rounded-lg border-2 bg-zinc-50 flex flex-col relative overflow-hidden">
+            <h2 class="text-sm tracking-widest mb-1">${Object.values(prezzi)[i].tipo}</h2>
             <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                 <span>€${Object.values(prezzi)[i]["standard"]}</span>
-                <span class="text-lg ml-1 font-normal text-gray-500">/${Object.keys(prezzi)[i]}</span>
+                <span class="text-lg ml-1 text-gray-500">/${Object.keys(prezzi)[i]}</span>
             </h1>
             <p class="flex items-center text-gray-600 mb-2">
                 <span
@@ -144,7 +207,7 @@ const abbonamentiPremium = () => {
     let tmpStr = ''
     for (let i = 0; i < Object.keys(prezzi).length; i++) { 
         tmpStr += `<div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-            <div class="h-full p-6 rounded-lg border-2 border-sky-500 flex flex-col relative overflow-hidden">
+            <div class="h-full p-6 rounded-lg border-2 bg-zinc-50 flex flex-col relative overflow-hidden">
             <h2 class="text-sm tracking-widest title-font mb-1 font-medium">${Object.values(prezzi)[i].tipo}</h2>
             <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
                 <span>€${Object.values(prezzi)[i]["premium"]}</span>
@@ -211,3 +274,4 @@ const bottoneStandard = document.querySelector('#bottone-standard')
 const bottonePremium = document.querySelector('#bottone-premium')
 bottoneStandard.addEventListener('click',()=>{cambiaAbbonamenti(abbonamentiStandard())})
 bottonePremium.addEventListener('click',()=>{cambiaAbbonamenti(abbonamentiPremium())})
+
