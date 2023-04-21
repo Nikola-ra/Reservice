@@ -47,13 +47,6 @@ const sliderGiorni = new Slider(
     0
 )
 
-const sliderOre = new Slider(
-    document.querySelector("#arrow-left2"),
-    document.querySelector("#arrow-right2"),
-    document.querySelectorAll('.slide2'),
-    0
-)
-
 sliderGiorni.frecciaSinistra.addEventListener('click',()=>{
     sliderGiorni.checkLunghezzaLeft()
     sliderGiorni.slideLeft()
@@ -64,45 +57,4 @@ sliderGiorni.frecciaDestra.addEventListener('click',()=>{
     sliderGiorni.slideRight()
 })
 
-sliderOre.frecciaSinistra.addEventListener('click',()=>{
-    sliderOre.checkLunghezzaLeft()
-    sliderOre.slideLeft()
-})
-
-sliderOre.frecciaDestra.addEventListener('click',()=>{
-    sliderOre.checkLunghezzaRight()
-    sliderOre.slideRight()
-})
-
 sliderGiorni.startSlide()
-sliderOre.startSlide()
-
-
-/* ROUTING GIORNI/ORE */
-class Route {
-    constructor(pagina,cta) {
-        this.pagina = pagina
-        this.cta = cta
-    }
-
-    routeTo() {this.pagina.style.display = 'flex'}
-}
-
-const clearAllRoutes = (sections) => {
-    sections.forEach((section)=>{
-        section.pagina.style.display = 'none'
-    })
-}
-
-const giorni = new Route(document.querySelector('#sezione-giorni'),document.querySelector('#pulsante-ore'))
-const ore = new Route(document.querySelector('#sezione-ore'),document.querySelector('#pulsante-giorni'))
-const conferma = new Route(document.querySelector('#sezione-conferma'),document.querySelector('#pulsante-conferma'))
-
-const router = [giorni,ore,conferma]
-
-router.forEach((route) => {
-    route.cta.addEventListener('click',()=>{
-        clearAllRoutes(router)
-        route.routeTo()
-    })
-})
