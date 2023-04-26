@@ -18,16 +18,16 @@ const agenda = document.querySelector('#agenda-p')
 const analitica = document.querySelector('#analitica-p')
 const abbonamenti = document.querySelector('#abbonamenti-p')
 const recensioni = document.querySelector('#recensioni-p')
-const clienti = document.querySelector('#clienti-p')
+const dipendenti = document.querySelector('#dipendenti-p')
 
 const dashboardI = new Route(document.querySelector('#dashboard-i'),'dashboard')
 const agendaI = new Route(document.querySelector('#agenda-i'),'agenda')
 const analiticaI = new Route(document.querySelector('#analitica-i'),'analitica')
 const abbonamentiI = new Route(document.querySelector('#abbonamenti-i'),'abbonamenti')
 const recensioniI = new Route(document.querySelector('#recensioni-i'),'recensioni')
-const clientiI = new Route(document.querySelector('#clienti-i'),'clienti')
+const dipendentiI = new Route(document.querySelector('#dipendenti-i'),'dipendenti')
 
-const icone = [dashboardI,agendaI,analiticaI,abbonamentiI,recensioniI,clientiI]
+const icone = [dashboardI,agendaI,analiticaI,abbonamentiI,recensioniI,dipendentiI]
 
 addEventListener('DOMContentLoaded',()=>{
     console.log(myParam)
@@ -58,10 +58,10 @@ addEventListener('DOMContentLoaded',()=>{
             recensioniI.target.classList.remove('border-not-hover')
             recensioniI.target.classList.add('border-hover')
             break
-        case clientiI.param:
+        case dipendentiI.param:
             document.body.classList.remove('menu-open')
-            clientiI.target.classList.remove('border-not-hover')
-            clientiI.target.classList.add('border-hover')
+            dipendentiI.target.classList.remove('border-not-hover')
+            dipendentiI.target.classList.add('border-hover')
             break
         default:
             document.body.classList.remove('menu-open')
@@ -75,7 +75,7 @@ icone.forEach((link) => {
     link.target.addEventListener('click',()=>{window.location.href = `areapriv.html?L=${link.param}`})
 })
 
-const pagine = [dashboard,agenda,analitica,abbonamenti,recensioni,clienti]
+const pagine = [dashboard,agenda,analitica,abbonamenti,recensioni,dipendenti]
 
 const myParam = urlParams.get('L')
 
@@ -100,9 +100,9 @@ switch (myParam) {
         clearNone(pagine)
         recensioni.style.display = 'block'
         break
-    case clientiI.param:
+    case dipendentiI.param:
         clearNone(pagine)
-        clienti.style.display = 'block'
+        dipendenti.style.display = 'block'
         break
     default:
         clearNone(pagine)
