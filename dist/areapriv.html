@@ -12,6 +12,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <style>
+        section div ul li{
+            font-size: 3vh;
+            padding: 10px;
+        }
+        section div ul{
+            margin-left: 5vh;   
+        }
+    </style>
 </head>
 
 <body class="bg-zinc-50">
@@ -47,7 +56,7 @@
 
             <ul class="flex flex-col h-full">
                 <li id="dashboard-i"
-                    class="border-not-hover transition-all duration-100 ease-cubic group">
+                    class="border-not-hover transition-all duration-100 ease-cubic group hidden">
                     <a 
                         class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -101,7 +110,7 @@
                     </a>
                 </li>
                 <li id="recensioni-i"
-                    class="border-not-hover transition-all duration-100 ease-cubic group">
+                    class="border-not-hover transition-all duration-100 ease-cubic group hidden">
                     <a
                         class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -114,13 +123,21 @@
                         <span class="dashboard-nav-text hidden lg:block">Recensioni</span>
                     </a>
                 </li>
+                <li id="dipendenti-i"
+                    class="border-not-hover transition-all duration-100 ease-cubic group">
+                    <a
+                        class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
+                        <svg class="block m-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2a5 5 0 1 0 5 5 5 5 0 0 0-5-5zm0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3zm9 11v-1a7 7 0 0 0-7-7h-4a7 7 0 0 0-7 7v1h2v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1z"></path></svg>
+                        <span class="dashboard-nav-text hidden lg:block">Dipendenti</span>
+                    </a>
+                </li>
                 <li class="flex-1"></li>
                 <li
                     class="border-not-hover transition-all duration-100 ease-cubic group w-full">
-                    <a
+                    <a href="./index.html"
                         class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            class=" block m-4">
+                            class="fill-stone-400 group-hover:fill-darkazzurro block m-4">
                             <path
                                 d="M12 21c4.411 0 8-3.589 8-8 0-3.35-2.072-6.221-5-7.411v2.223A6 6 0 0 1 18 13c0 3.309-2.691 6-6 6s-6-2.691-6-6a5.999 5.999 0 0 1 3-5.188V5.589C6.072 6.779 4 9.65 4 13c0 4.411 3.589 8 8 8z">
                             </path>
@@ -147,22 +164,67 @@
 
             <!-- DASHBOARD -->
             <section id="dashboard-p" class="w-full min-h-screen">
-                <h1 class="titles">Benvenuto nella dashboard</h1>
+                <h2 class="titles">Benvenuto nella dashboard</h2>
             </section>
 
             <!-- AGENDA -->
             <section id="agenda-p" class="w-full min-h-screen" style="display: none;">
-                <h1 class="titles">Benvenuto nell'agenda</h1>
+                    <div style=" height: 100%; display:flex; justify-content: center; align-items: center;">
+                        <ul style="display: flex; justify-content: start; align-items: center; flex-direction: column; height: 20vh;">
+                            <li style="background-color: white; border-radius: 10px;">Lunedì</li>
+                            <li>8:30 - 9:00</li>
+                            <li>10:00 - 10:30</li>
+                            <li>11:00 - 11:30</li>
+                            <li>15:00 - 15:30</li>
+                        </ul>
+                        <ul style="display: flex; justify-content: start; align-items: center; flex-direction: column; height: 20vh;">
+                            <li style="background-color: white; border-radius: 10px;">Martedì</li>
+                            <li>8:30 - 9:00</li>
+                            <li>10:00 - 10:30</li>
+                            <li>14:00 - 14:30</li>
+                            <li>15:00 - 15:30</li>
+                        </ul>
+                        <ul style="display: flex; justify-content: start; align-items: center; flex-direction: column; height: 20vh;">
+                            <li style="background-color: white; border-radius: 10px;">Mercoledì</li>
+                            <li>8:30 - 9:00</li>
+                            <li>10:00 - 10:30</li>
+                            <li>13:00 - 13:30</li>
+                            <li>17:00 - 17:30</li>
+                        </ul>
+                        <ul style="display: flex; justify-content: start; align-items: center; flex-direction: column; height: 20vh;">
+                            <li style="background-color: white; border-radius: 10px;">Giovedì</li>
+                            <li>9:30 - 10:00</li>
+                            <li>10:30 - 11:30</li>
+                            <li>14:00 - 14:30</li>
+                            <li>17:00 - 17:30</li>
+                        </ul>
+                        <ul style="display: flex; justify-content: start; align-items: center; flex-direction: column; height: 20vh;">
+                            <li style="background-color: white; border-radius: 10px;">Venerdì</li>
+                            <li>9:30 - 10:00</li>
+                            <li>10:30 - 11:00</li>
+                            <li>16:00 - 16:30</li>
+                            <li>17:00 - 17:30</li>
+                        </ul >
+                        <ul style="display: flex; justify-content: start; align-items: center; flex-direction: column; height: 20vh;">
+                            <li style="background-color: white; border-radius: 10px;">Sabato</li>
+                            <li>11:30 - 12:00</li>
+                            <li>12:30 - 13:00</li>
+                            <li>16:00 - 16:30</li>
+                            <li>17:30 - 18:00</li>
+                        </ul>
+                        <ul style="display: flex; justify-content: start; align-items: center; flex-direction: column; height: 20vh;">
+                            <li style="background-color: white; border-radius: 10px;">Domenica</li>
+                        </ul>
+                </div>
             </section>
 
             <!-- ANALYTICS -->
             <section id="analitica-p" class="w-full min-h-screen relative" style="display: none;">
-
                 <div class="absolute h-48 bg-darkazzurro w-full z-10"></div>
 
                 <div class="mt-24 flex flex-col sm:flex-row w-full h-min items-center justify-evenly flex-wrap">
                     <div class="w-full 2xl:w-1/2 flex flex-col sm:flex-row">
-                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min z-20">
+                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min z-20 drop-shadow-md">
                             <p class="text-xl text-slate-600">Prenotazioni</p>
                             <span class="block w-full text-center mt-4 text-6xl text-slate-700 font-bold">648</span>
                             <span class="flex-adjust w-full text-center text-2xl text-emerald-400">
@@ -175,7 +237,7 @@
                                 121
                             </span>
                         </div>
-                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min z-20">
+                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min z-20 drop-shadow-md">
                             <p class="text-xl text-slate-600">Profitto</p>
                             <span class="block w-full text-center mt-4 text-6xl text-slate-700 font-bold">2,389<span
                                     class="text-2xl align-super ml-2">€</span></span>
@@ -191,7 +253,7 @@
                         </div>
                     </div>
                     <div class="w-full 2xl:w-1/2 flex flex-col sm:flex-row">
-                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min z-20">
+                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min z-20 drop-shadow-md">
                             <p class="text-xl text-slate-600">Interesse</p>
                             <span class="block w-full text-center mt-4 text-6xl text-slate-700 font-bold">41,2<span
                                     class="text-2xl align-super ml-2">%</span></span>
@@ -205,7 +267,7 @@
                                 8,5%
                             </span>
                         </div>
-                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min z-20">
+                        <div class="rounded-xl bg-zinc-50 p-4 flex-1 m-4 min-w-min z-20 drop-shadow-md">
                             <p class="text-xl text-slate-600">Valutazione</p>
                             <span class="block w-full text-center mt-4 text-6xl text-slate-700 font-bold">4,6<span
                                     class="text-2xl align-super ml-2">/5</span></span>
@@ -221,7 +283,11 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="sm:mt-20 mt-0 w-full flex justify-center align-middle">
+                    <div class="rounded-xl p-10 bg-zinc-50 drop-shadow-md m-4 w-[380px] sm:w-[600px] lg:w-[800px] h-64 sm:h-80">
+                        <canvas id="myChart" style="width: full !important;"></canvas>
+                    </div>
+                </div>
             </section>
 
             <!-- ABBONAMENTO -->
@@ -229,14 +295,14 @@
                 <section class="text-gray-600 overflow-hidden">
                     <div class="container px-5 py-24 mx-auto">
                       <div class="flex flex-col text-center w-full mb-20">
-                        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Abbonamenti</h1>
+                        <h2 class="sm:text-5xl text-xl font-bold mb-2 text-gray-800">Abbonamenti</h2>
                         <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">Scegli il piano migliore per te e ottieni tutti i vantaggi disponibili</p>
                         <div class="flex mx-auto border-2 border-sky-500 rounded overflow-hidden mt-6">
                           <button id="bottone-standard" class="py-1 px-4 bg-sky-500 text-white focus:outline-none">Standard</button>
                           <button id="bottone-premium" class="py-1 px-4 focus:outline-none">Premium</button>
                         </div>
                       </div>
-                      <div class="abbonamenti-wrapper flex flex-wrap -m-4">
+                      <div class="abbonamenti-wrapper flex flex-wrap -m-4 mx-auto max-w-[1300px]">
                       </div>
                     </div>
                   </section>
@@ -244,7 +310,19 @@
 
             <!-- RECENSIONI -->
             <section id="recensioni-p" class="w-full min-h-screen" style="display: none;">
-                <h1 class="titles">Benvenuto nelle recensioni</h1>
+                <h2 class="titles">Benvenuto nelle recensioni</h2>
+            </section>
+
+            <!-- DIPENDENTI -->
+            <section id="dipendenti-p" class="w-full min-h-screen p-4 mt-20 sm:mt-0" style="display: none;">
+                <h2 class="titles">Benvenuto nei dipendenti</h2>
+                <ul class="w-full margins mt-8">
+                    <li class="flex items-center subtitles text-2xl bg-zinc-100 drop-shadow-xl rounded-xl p-4"><img class="object-cover w-24 h-24 rounded-full" src="./img/fra1.jpg" alt=""><span class="ml-8">Marco Rossi</span></li>
+                    <li class="flex items-center subtitles text-2xl bg-zinc-100 drop-shadow-xl rounded-xl p-4"><img class="object-cover w-24 h-24 rounded-full" src="./img/fra2.jpg" alt=""><span class="ml-8">Francesco Lorenzi</span></li>
+                    <li class="flex items-center subtitles text-2xl bg-zinc-100 drop-shadow-xl rounded-xl p-4"><img class="object-cover w-24 h-24 rounded-full" src="./img/fra3.jpg" alt=""><span class="ml-8">Marta Greca</span></li>
+                    <li class="flex items-center subtitles text-2xl bg-zinc-100 drop-shadow-xl rounded-xl p-4"><img class="object-cover w-24 h-24 rounded-full" src="./img/fra4.jpg" alt=""><span class="ml-8">Andrea Cattaneo</span></li>
+                    <li class="flex items-center subtitles text-2xl bg-zinc-100 drop-shadow-xl rounded-xl p-4"><img class="object-cover w-24 h-24 rounded-full" src="./img/fra5.jpg" alt=""><span class="ml-8">Serena Medici</span></li>
+                </ul>
             </section>
 
         </section>
@@ -252,6 +330,9 @@
 
     <script src="./menu.js"></script>
     <script src="./areapriv.js"></script>
+    <script src="./prezzi.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./chart.js"></script>
 </body>
 
 </html>

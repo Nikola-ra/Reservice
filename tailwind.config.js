@@ -16,7 +16,7 @@ module.exports = {
         'xs': '360px'
       },
       backgroundImage: {
-        'gradient-sx' : 'linear-gradient(to bottom, #e8e8f0 0%, #d5d5ee 100%)',
+        'gradient-sx' : 'linear-gradient(0deg, #cfd9df 0%, #e1e5e8 100%)',
         'gradient-dx' : 'linear-gradient(130deg, #628EE0 0%, #5CCCED 100%)'
       },
       transitionTimingFunction: {
