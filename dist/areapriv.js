@@ -30,7 +30,6 @@ const dipendentiI = new Route(document.querySelector('#dipendenti-i'),'dipendent
 const icone = [dashboardI,agendaI,analiticaI,abbonamentiI,recensioniI,dipendentiI]
 
 addEventListener('DOMContentLoaded',()=>{
-    console.log(myParam)
     switch (myParam) {
         
         case dashboardI.param:
@@ -65,8 +64,8 @@ addEventListener('DOMContentLoaded',()=>{
             break
         default:
             document.body.classList.remove('menu-open')
-            dashboardI.target.classList.remove('border-not-hover')
-            dashboardI.target.classList.add('border-hover')
+            analiticaI.target.classList.remove('border-not-hover')
+            analiticaI.target.classList.add('border-hover')
             break
     }
 })
@@ -106,6 +105,6 @@ switch (myParam) {
         break
     default:
         clearNone(pagine)
-        dashboard.style.display = 'block'
+        analitica.style.display = 'block'
         break
 }

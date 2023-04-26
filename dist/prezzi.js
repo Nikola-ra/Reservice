@@ -7,7 +7,6 @@ const clearInnerElements = (element) => {
 }
 
 const wrapperAbbonamenti = document.querySelector('.abbonamenti-wrapper')
-console.log(wrapperAbbonamenti)
 
 const prezzi = {
     "mese": {
@@ -79,7 +78,7 @@ const abbonamentiStandard = () => {
                 </svg>
                 </span>Primo posto per categoria
             </p>
-            <a href="./areapriv.html?L=dashboard">
+            <a href="./areapriv.html">
             <button
                 class="flex items-center mt-auto text-white bg-sky-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-sky-600 rounded">Conferma
                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -144,7 +143,7 @@ const abbonamentiPremium = () => {
                 </svg>
                 </span>Primo posto per categoria
             </p>
-            <a href="./areapriv.html?L=dashboard">
+            <a href="./areapriv.html">
                 <button
                     class="flex items-center mt-auto text-white bg-sky-500 border-0 py-2 px-4 w-full focus:outline-none hover:bg-sky-600 rounded">Conferma
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

@@ -56,7 +56,7 @@
 
             <ul class="flex flex-col h-full">
                 <li id="dashboard-i"
-                    class="border-not-hover transition-all duration-100 ease-cubic group">
+                    class="border-not-hover transition-all duration-100 ease-cubic group hidden">
                     <a 
                         class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -110,7 +110,7 @@
                     </a>
                 </li>
                 <li id="recensioni-i"
-                    class="border-not-hover transition-all duration-100 ease-cubic group">
+                    class="border-not-hover transition-all duration-100 ease-cubic group hidden">
                     <a
                         class="text-stone-400 cursor-pointer group-hover:text-darkazzurro text-lg flex items-center dashboard-nav-link justify-end lg:justify-start px-4 py-2.5">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -283,9 +283,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-20 w-full flex justify-center align-middle">
-                    <div class="rounded-xl p-10 bg-zinc-50 drop-shadow-md">
-                        <canvas id="myChart" style="display: block; width: 607px; height: 320px;" width="607" height="320"></canvas>
+                <div class="sm:mt-20 mt-0 w-full flex justify-center align-middle">
+                    <div class="rounded-xl p-10 bg-zinc-50 drop-shadow-md m-4 w-[380px] sm:w-[600px] lg:w-[800px] h-64 sm:h-80">
+                        <canvas id="myChart" style="width: full !important;"></canvas>
                     </div>
                 </div>
             </section>
@@ -332,7 +332,6 @@
     <script src="./areapriv.js"></script>
     <script src="./prezzi.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js" integrity="sha512-v3ygConQmvH0QehvQa6gSvTE2VdBZ6wkLOlmK7Mcy2mZ0ZF9saNbbk19QeaoTHdWIEiTlWmrwAL4hS8ElnGFbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./chart.js"></script>
 </body>
 
