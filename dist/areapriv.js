@@ -24,14 +24,16 @@ const agenda = document.querySelector('#agenda-p')
 const analitica = document.querySelector('#analitica-p')
 const abbonamenti = document.querySelector('#abbonamenti-p')
 const recensioni = document.querySelector('#recensioni-p')
+const clienti = document.querySelector('#clienti-p')
 
 const dashboardI = new Route(document.querySelector('#dashboard-i'),'dashboard')
 const agendaI = new Route(document.querySelector('#agenda-i'),'agenda')
 const analiticaI = new Route(document.querySelector('#analitica-i'),'analitica')
 const abbonamentiI = new Route(document.querySelector('#abbonamenti-i'),'abbonamenti')
 const recensioniI = new Route(document.querySelector('#recensioni-i'),'recensioni')
+const clientiI = new Route(document.querySelector('#clienti-i'),'clienti')
 
-const icone = [dashboardI,agendaI,analiticaI,abbonamentiI,recensioniI]
+const icone = [dashboardI,agendaI,analiticaI,abbonamentiI,recensioniI,clientiI]
 
 addEventListener('DOMContentLoaded',()=>{
     console.log(myParam)
@@ -62,6 +64,11 @@ addEventListener('DOMContentLoaded',()=>{
             recensioniI.target.classList.remove('border-not-hover')
             recensioniI.target.classList.add('border-hover')
             break
+        case clientiI.param:
+            document.body.classList.remove('menu-open')
+            clientiI.target.classList.remove('border-not-hover')
+            clientiI.target.classList.add('border-hover')
+            break
         default:
             document.body.classList.remove('menu-open')
             dashboardI.target.classList.remove('border-not-hover')
@@ -74,7 +81,7 @@ icone.forEach((link) => {
     link.target.addEventListener('click',()=>{window.location.href = `areapriv.html?L=${link.param}`})
 })
 
-const pagine = [dashboard,agenda,analitica,abbonamenti,recensioni]
+const pagine = [dashboard,agenda,analitica,abbonamenti,recensioni,clienti]
 
 const myParam = urlParams.get('L')
 
@@ -99,6 +106,10 @@ switch (myParam) {
         clearNone(pagine)
         recensioni.style.display = 'block'
         break
+    case clientiI.param:
+        clearNone(pagine)
+        clienti.style.display = 'block'
+        break
     default:
         clearNone(pagine)
         dashboard.style.display = 'block'
@@ -110,22 +121,17 @@ switch (myParam) {
 const wrapperAbbonamenti = document.querySelector('.abbonamenti-wrapper')
 
 const prezzi = {
-    "mo": {
+    "mese": {
         "tipo": "MENSILE",
         "standard": 20,
         "premium": 40
     },
-    "3-mo": {
+    "3 mesi": {
         "tipo": "3 MESI",
         "standard": 30,
         "premium": 60
     },
-    "6-mo": {
-        "tipo": "6 MESI",
-        "standard": 45,
-        "premium": 75
-    },
-    "y": {
+    "anno": {
         "tipo": "ANNUALE",
         "standard": 80,
         "premium": 105
@@ -143,11 +149,11 @@ const abbonamentiStandard = () => {
     bottoneStandard.classList.add('text-white')
     let tmpStr = ''
     for (let i = 0; i < Object.keys(prezzi).length; i++) {
-        tmpStr += `<div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-            <div class="h-full p-6 rounded-lg border-2 bg-zinc-50 flex flex-col relative overflow-hidden">
+        tmpStr += `<div class="p-4 xl:w-1/3 w-full sm:px-32 md:px-40 px-4 min-w-min xl:px-4">
+            <div class="h-full p-6 rounded-lg shadow-lg bg-zinc-50 flex flex-col relative overflow-hidden">
             <h2 class="text-sm tracking-widest mb-1">${Object.values(prezzi)[i].tipo}</h2>
-            <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                <span>€${Object.values(prezzi)[i]["standard"]}</span>
+            <h1 class="text-5xl text-gray-900 flex items-center pb-4 mb-4 border-b border-gray-200">
+                <span class="text-5xl text-slate-700 font-semibold">€${Object.values(prezzi)[i]["standard"]}</span>
                 <span class="text-lg ml-1 text-gray-500">/${Object.keys(prezzi)[i]}</span>
             </h1>
             <p class="flex items-center text-gray-600 mb-2">
@@ -206,11 +212,11 @@ const abbonamentiPremium = () => {
     bottonePremium.classList.add('text-white')
     let tmpStr = ''
     for (let i = 0; i < Object.keys(prezzi).length; i++) { 
-        tmpStr += `<div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-            <div class="h-full p-6 rounded-lg border-2 bg-zinc-50 flex flex-col relative overflow-hidden">
+        tmpStr += `<div class="p-4 xl:w-1/3 w-full sm:px-32 md:px-40 px-4 min-w-min xl:px-4">
+            <div class="h-full p-6 rounded-lg bg-zinc-50 drop-shadow-lg flex flex-col relative overflow-hidden">
             <h2 class="text-sm tracking-widest title-font mb-1 font-medium">${Object.values(prezzi)[i].tipo}</h2>
             <h1 class="text-5xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                <span>€${Object.values(prezzi)[i]["premium"]}</span>
+                <span class="text-5xl text-slate-700 font-semibold">€${Object.values(prezzi)[i]["premium"]}</span>
                 <span class="text-lg ml-1 font-normal text-gray-500">/${Object.keys(prezzi)[i]}</span>
             </h1>
             <p class="flex items-center text-gray-600 mb-2">
