@@ -15,11 +15,37 @@
 </head>
 
 <body>
+
+    <header id="outer-header"
+    class="md:px-12 fixed w-full h-16 block py-10 px-6 z-50 menu-transition duration-300 ease-cubic shadow-lg" style="background-color: rgb(92 204 237) !important;">
+    <div class="margins flex items-center justify-between h-full">
+        <a href="./index.html"><img src="./img/logo_w.svg" alt="Reservice Logo"
+                class="relative z-50 h-12"></a>
+        <nav>
+            <ul id="menu"
+                class="ease-cubic bg-zinc-100 md:bg-transparent pt-16 fold:flex md:p-0 md:bg-none md:static md:space-x-2 md:min-h-0 md:flex md:translate-x-0 md:space-y-0 fold:flex-row fold:space-y-0 fixed inset-0 z-40 w-full min-h-screen p-4 space-y-4 transition duration-500 translate-x-full">
+                <li><a href="./cambiopassword.html" class="md:m-auto block p-2 mt-12 text-darkblue">CAMBIO PASSOWRD</a></li>
+                <li><a href="./index.html" class="md:m-auto block p-2 mt-12 text-darkblue">LOGOUT</a></li>
+            </ul>
+        </nav>
+        <button class="burger md:hidden z-50 block">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="block w-10 h-10">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+            </svg>
+        </button>
+    </div>
+  </header>
+
+
   <section class="text-gray-600">
     <div class="container px-5 py-24 mx-auto">
+
+      <h2 class="my-4 text-2xl ">Poste</h2>
       <div class="flex flex-wrap -m-4">
         <!-- Singola card -->
-        <div class="xl:w-1/4 md:w-1/2 p-4 w-full">
+        <div class="xl:w-1/4 md:w-1/2 p-4 w-full drop-shadow-lg ">
           <div class="bg-gray-100 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center" src="https://j9c3s3g6.rocketcdn.me/wp-content/uploads/2020/09/corso-barbiere.jpg"
               alt="content">
@@ -40,7 +66,7 @@
           </div>
         </div>
 
-        <div class="xl:w-1/4 md:w-1/2 p-4 w-full">
+        <div class="xl:w-1/4 md:w-1/2 p-4 w-full drop-shadow-lg ">
           <div class="bg-gray-100 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center" src="https://j9c3s3g6.rocketcdn.me/wp-content/uploads/2020/09/corso-barbiere.jpg"
               alt="content">
@@ -61,7 +87,7 @@
           </div>
         </div>
 
-        <div class="xl:w-1/4 md:w-1/2 p-4 w-full">
+        <div class="xl:w-1/4 md:w-1/2 p-4 w-full drop-shadow-lg ">
           <div class="bg-gray-100 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center" src="https://j9c3s3g6.rocketcdn.me/wp-content/uploads/2020/09/corso-barbiere.jpg"
               alt="content">
@@ -82,7 +108,7 @@
           </div>
         </div>
 
-        <div class="xl:w-1/4 md:w-1/2 p-4 w-full">
+        <div class="xl:w-1/4 md:w-1/2 p-4 w-full drop-shadow-lg ">
           <div class="bg-gray-100 p-6 rounded-lg">
             <img class="h-40 rounded w-full object-cover object-center" src="https://j9c3s3g6.rocketcdn.me/wp-content/uploads/2020/09/corso-barbiere.jpg"
               alt="content">
@@ -102,11 +128,102 @@
             </div>
           </div>
         </div>
+      </div>
 
+        <h2 class="my-4 text-2xl mt-12">Bellezza</h2>
+        <div class="flex flex-wrap -m-4">
+          <!-- Singola card -->
+          <div class="xl:w-1/4 md:w-1/2 p-4 w-full drop-shadow-lg ">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center" src="https://j9c3s3g6.rocketcdn.me/wp-content/uploads/2020/09/corso-barbiere.jpg"
+                alt="content">
+              <h2 class="text-xl text-gray-900 font-medium">Barbiere uomo</h2>
+              <h3 class="tracking-widest text-indaco text-xs font-medium mb-6">BELLEZZA</h3>
+              <p class="leading-relaxed text-base">Qui da barbiere uomo offriamo tagli di qualità ed economici.</p>
+              <div class="flex items-center justify-between mt-4">
+                <button
+                  class="bg-darkazzurro px-4 py-1.5 rounded-full text-gray-900 font-bold">Prenota</button>
+                <a href="https://www.google.it/maps/preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="xl:w-1/4 md:w-1/2 p-4 w-full drop-shadow-lg ">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center" src="https://j9c3s3g6.rocketcdn.me/wp-content/uploads/2020/09/corso-barbiere.jpg"
+                alt="content">
+              <h2 class="text-xl text-gray-900 font-medium">Barbiere uomo</h2>
+              <h3 class="tracking-widest text-indaco text-xs font-medium mb-6">BELLEZZA</h3>
+              <p class="leading-relaxed text-base">Qui da barbiere uomo offriamo tagli di qualità ed economici.</p>
+              <div class="flex items-center justify-between mt-4">
+                <button
+                  class="bg-darkazzurro px-4 py-1.5 rounded-full text-gray-900 font-bold">Prenota</button>
+                <a href="https://www.google.it/maps/preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="xl:w-1/4 md:w-1/2 p-4 w-full drop-shadow-lg ">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center" src="https://j9c3s3g6.rocketcdn.me/wp-content/uploads/2020/09/corso-barbiere.jpg"
+                alt="content">
+              <h2 class="text-xl text-gray-900 font-medium">Barbiere uomo</h2>
+              <h3 class="tracking-widest text-indaco text-xs font-medium mb-6">BELLEZZA</h3>
+              <p class="leading-relaxed text-base">Qui da barbiere uomo offriamo tagli di qualità ed economici.</p>
+              <div class="flex items-center justify-between mt-4">
+                <button
+                  class="bg-darkazzurro px-4 py-1.5 rounded-full text-gray-900 font-bold">Prenota</button>
+                <a href="https://www.google.it/maps/preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="xl:w-1/4 md:w-1/2 p-4 w-full drop-shadow-lg ">
+            <div class="bg-gray-100 p-6 rounded-lg">
+              <img class="h-40 rounded w-full object-cover object-center" src="https://j9c3s3g6.rocketcdn.me/wp-content/uploads/2020/09/corso-barbiere.jpg"
+                alt="content">
+              <h2 class="text-xl text-gray-900 font-medium">Barbiere uomo</h2>
+              <h3 class="tracking-widest text-indaco text-xs font-medium mb-6">BELLEZZA</h3>
+              <p class="leading-relaxed text-base">Qui da barbiere uomo offriamo tagli di qualità ed economici.</p>
+              <div class="flex items-center justify-between mt-4">
+                <button
+                  class="bg-darkazzurro px-4 py-1.5 rounded-full text-gray-900 font-bold">Prenota</button>
+                <a href="https://www.google.it/maps/preview">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path
+                      d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z">
+                    </path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
 
       </div>
+
+
     </div>
   </section>
+
+  <script src="./menu.js"></script>
 </body>
 
 </html>
