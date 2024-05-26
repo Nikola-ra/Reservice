@@ -1,4 +1,4 @@
 # Reservice
-## progetto eccellenze-Git 2023
-[VIDEO PROGETTO](in lavorazione)
+## progetto StartUp 2024
+
 #progetto GitHub
